@@ -1,0 +1,127 @@
+/*le style d'écriture et image de fond*/
+body {
+  font-family: "AR CENA", serif;
+  src: url(Style/ecriture/ARCENA.ttf);
+  background-image:url(image/ghibligabble.blogspot.com.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0.5em;
+}
+ul{
+	list-style-type: none;
+}
+
+ul li {
+  padding-left: 2em;
+  background-image: url(image/calcifère.png);
+  background-size: 1em;
+  background-repeat: no-repeat;
+}
+
+body h1{
+	text-align:center;
+	 border: 5px solid #245D71;/*bleu foncé*/
+	 color: #245D71;
+}
+
+/*pour la mise en place du menu*/
+nav{
+	position: initial;
+	display:grid;
+	/*si le menu est plus grand rajouter 1fr*/
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	text-align: center;
+	background-color: #C8EAF4;/*meme bleu que l'image de fond*/
+	height: 2em;
+}
+
+/*mise en page des formulaires*/
+section form div{
+	display:block;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.envoyer{
+	text-align: right;
+}
+
+nav a{
+    border: 5px solid #245D71;/*bleu foncé*/
+    text-decoration: none;
+}
+
+section{
+	background-color: rgb(36, 93, 113,.65);
+	margin: 1em;
+	padding: 1em;
+	border-radius: 10px;
+}
+section h1{
+	text-align: center;
+	color: #E0D2D3;
+	text-decoration: underline;
+}
+/*couleur de fond*/
+html{
+	background-color: #C8EAF4;/*meme bleu que l'image de fond*/
+	color:  #E0D2D3;/*bleutrèsfoncé*/
+}
+/*Position de l'image et taille*/
+.imgghibli{
+	position: absolute;
+	width: 98.5%;
+}
+
+.nouveau{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	border: 10px solid #200E3E;/*bleu foncé violacé*/
+}
+
+.categories{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	border: 10px solid #6B1218;/*bordeau foncé*/
+}
+
+div{
+	display:grid;
+	grid-template-columns: 2fr 3fr;
+	justify-content: center;
+}
+
+.ref{
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.navigation{
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.image{
+	grid-column: 2;
+	grid-row: 1/3;
+	margin: auto;
+	width: 60%;
+}
+
+section img{
+	width: 100%;
+}
+
+footer{
+	display:grid;
+	grid-template-columns: 1fr 1fr 2fr;
+	background-color: #245D71;/*bleu foncé violacé*/
+	color: #E0D2D3;/*grisclaire*/
+	border-radius: 10px;
+	text-align: center;
+	padding: 0.5em;
+}
+
+.error{
+  background-color: rgb(255,0, 0, .65);
+}
